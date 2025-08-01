@@ -6,12 +6,12 @@ Why?
 
 I spend a good amount of time setting up my project before I can actually start diving into the code and building something. The goal of this starter template is to have that all done for me already.
 
-I also ccreate a small package to be able to quickly get a new project running using `npx`.
+I also created a small package to be able to quickly get a new project running using `npx`.
 
 ## Getting Started
 
 ```bash
-# Clone the repository
+# Run
 npx create-next-starter-app-template
 
 # Start development server
