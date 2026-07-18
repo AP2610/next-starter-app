@@ -47,7 +47,7 @@ pnpm dev
 
 ### Testing Setup
 
-- Jest with React Testing Library
+- Vitest with React Testing Library
 - Coverage reporting
 
 ### Utilities
@@ -115,12 +115,12 @@ I'm placing these here in case I need to quickly use them in a project not using
 - `prettier@3.9.5`
 - `prettier-plugin-tailwindcss`
 - `husky@9.1.7`
-- `jest@30.0.4`
-- `jest-environment-jsdom`
-- `@types/jest`
+- `vitest@4.1.10`
+- `@vitest/coverage-v8`
+- `@vitejs/plugin-react`
+- `jsdom`
 - `@testing-library/dom`
 - `@testing-library/jest-dom`
-- `@testing-library/react`
 - `@testing-library/react@16.3.0`
 - `@typescript-eslint/eslint-plugin`
 - `@typescript-eslint/parser`

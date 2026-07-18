@@ -1,31 +1,19 @@
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import { FlatCompat } from '@eslint/eslintrc';
-import typescript from '@typescript-eslint/parser';
+import { defineConfig } from 'eslint/config';
+import nextVitals from 'eslint-config-next/core-web-vitals';
+import nextTypeScript from 'eslint-config-next/typescript';
+import prettierRecommended from 'eslint-plugin-prettier/recommended';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript', 'plugin:prettier/recommended', 'plugin:@typescript-eslint/recommended'),
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTypeScript,
+  prettierRecommended,
   {
-    languageOptions: {
-      parser: typescript,
-      parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
-      },
-    },
     rules: {
       '@typescript-eslint/no-explicit-any': 'error',
       'prettier/prettier': 'warn',
       'react/no-unescaped-entities': 'off',
     },
   },
-];
+]);
 
 export default eslintConfig;
