@@ -15,12 +15,12 @@ I also created a small package to be able to quickly get a new project running u
 npx create-next-starter-app-template
 
 # Start development server
-npm run dev
+pnpm dev
 ```
 
 ### Core Framework
 
-- **Next.js 15** with App Router
+- **Next.js 16** with App Router
 - **React 19**
 - **TypeScript**
 - **Tailwind CSS v4**
@@ -105,14 +105,14 @@ I'm placing these here in case I need to quickly use them in a project not using
 
 ### UI & Styling
 
-- `motion@12.23.6`
-- `react-icons@5.5.0`
+- `motion@12.42.2`
+- `react-icons@5.7.0`
 - `clsx@2.1.1`
-- `tailwind-merge@3.3.1`
+- `tailwind-merge@3.6.0`
 
 ### Development
 
-- `prettier@3.6.2`
+- `prettier@3.9.5`
 - `prettier-plugin-tailwindcss`
 - `husky@9.1.7`
 - `jest@30.0.4`
